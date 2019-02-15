@@ -1,0 +1,54 @@
+version: '3.3'
+
+services:
+
+  postgres-auth:
+    image: "postgres:10"
+  postgres-user:
+    image: "postgres:10"
+
+  redis:
+    image: "redis:latest"
+  rabbitmq:
+    image: "rabbitmq:3"
+
+  eureka:
+    build:
+      context: ./eureka
+      dockerfile: Dockerfile
+    ports:
+      - "9100:8761"
+
+  user-server:
+    build:
+      context: ./user
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - eureka
+      - postgres-user
+      - rabbitmq
+
+
+  auth-server:
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - eureka
+      - postgres-auth
+      - rabbitmq
+      - user-server
+
+  gateway-server:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    ports:
+      - "10000:8080"
+    depends_on:
+      - redis
+      - eureka
+      - auth-server
+      - user-server
