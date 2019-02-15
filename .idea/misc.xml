@@ -5,7 +5,6 @@
       <list>
         <option value="$PROJECT_DIR$/logs/pom.xml" />
         <option value="$PROJECT_DIR$/trip/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
