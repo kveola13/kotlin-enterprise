@@ -24,7 +24,7 @@ spring:
         - id: user-server
           uri: lb://user-server
           predicates:
-            - Path=/user-service/**
+            - Path=/user-no.westerdals.auth.service/**
 
 
 eureka:
