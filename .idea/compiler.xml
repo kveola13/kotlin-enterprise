@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth" />
+        <module name="eureka" />
+        <module name="gateway" />
+        <module name="logs" />
+        <module name="trip" />
+        <module name="user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="1.5" />
+      <module name="eureka" target="1.5" />
+      <module name="gateway" target="1.5" />
+      <module name="kotlin-enterprise" target="1.5" />
+      <module name="logs" target="1.5" />
+      <module name="trip" target="1.5" />
+      <module name="user" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
