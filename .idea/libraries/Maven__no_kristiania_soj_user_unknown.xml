@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: no.kristiania.soj:user:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/kristiania/soj/user/unknown/user-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/no/kristiania/soj/user/unknown/user-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/kristiania/soj/user/unknown/user-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
