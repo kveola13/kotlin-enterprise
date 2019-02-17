@@ -12,7 +12,11 @@
   </component>
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="WebSecurityConfig" removed="false">
+          <file>file://$MODULE_DIR$/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt</file>
+        </fileset>
+      </configuration>
     </facet>
     <facet type="web" name="Web">
       <configuration>
