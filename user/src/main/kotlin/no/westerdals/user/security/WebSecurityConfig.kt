@@ -46,3 +46,4 @@ class WebSecurityConfig : org.springframework.security.config.annotation.web.con
             .withUser("foo").password("{noop}bar").roles("USER").and()
             .withUser("admin").password("{noop}admin").roles("ADMIN", "USER")
     }
+}

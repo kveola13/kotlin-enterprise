@@ -14,11 +14,6 @@
     <dependencies>
 
         <dependency>
-            <groupId>no.kristiania.soj</groupId>
-            <artifactId>user</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
@@ -156,4 +151,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

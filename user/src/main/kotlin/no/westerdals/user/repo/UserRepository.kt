@@ -1,5 +1,6 @@
-package no.westerdals.user
+package no.westerdals.user.repo
 
+import no.westerdals.user.entity.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
@@ -7,11 +8,10 @@ import org.springframework.transaction.annotation.Transactional
 import javax.persistence.EntityManager
 
 @Repository
-interface UserDetailsRepository : CrudRepository<UserDetailsEntity, String>, UserDetailsRepositoryCustom {
-}
+interface UserRepository : CrudRepository<User, String>, UserRepositoryCustom
 
 @Transactional
-interface UserDetailsRepositoryCustom {
+interface UserRepositoryCustom {
 
     fun createUserDetails(
             username: String,
@@ -26,7 +26,7 @@ interface UserDetailsRepositoryCustom {
 
 @Repository
 @Transactional
-class UserDetailsRepositoryImpl : UserDetailsRepositoryCustom {
+class UserRepositoryImpl : UserRepositoryCustom {
 
     @Autowired
     private lateinit var em: EntityManager
@@ -39,13 +39,13 @@ class UserDetailsRepositoryImpl : UserDetailsRepositoryCustom {
             age: Int,
             purchasedTickets: MutableList<Long>): Boolean {
 
-        val userDetails = UserDetailsEntity(username, name, surname, email, age, purchasedTickets)
+        val userDetails = User(username, name, surname, email, age, purchasedTickets)
         em.persist(userDetails)
         return true
     }
 
     override fun updateEmail(username: String, email: String): Boolean{
-        val userDetails = em.find(UserDetailsEntity::class.java, username) ?: return false
+        val userDetails = em.find(User::class.java, username) ?: return false
         userDetails.email = email
         return true
     }

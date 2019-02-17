@@ -1,4 +1,4 @@
-package  no.westerdals.user
+package  no.westerdals.user.entity
 
 import javax.persistence.*
 import javax.validation.constraints.Email
@@ -30,6 +30,4 @@ class User(
 
     @get:ElementCollection
     var purchasedTickets: MutableList<Long>? = mutableListOf()
-
-
 )
