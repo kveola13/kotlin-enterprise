@@ -28,6 +28,7 @@ class User(
     @get:NotNull
     var age: Int?,
 
+    //Purchased trips
     @get:ElementCollection
     var purchasedTickets: MutableList<Long>? = mutableListOf()
 )

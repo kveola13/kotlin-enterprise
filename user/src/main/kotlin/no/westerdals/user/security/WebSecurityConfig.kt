@@ -10,10 +10,10 @@ class WebSecurityConfig : org.springframework.security.config.annotation.web.con
 
         http.csrf().disable()
         http.authorizeRequests()
-            .antMatchers("/api/userDetailsCount").permitAll()
-            .antMatchers("/api/userDetails").hasRole("ADMIN")
+            .antMatchers("/api/userCount").permitAll()
+            .antMatchers("/api/user").hasRole("ADMIN")
 
-            .antMatchers("/api/userDetails/{id}/**")
+            .antMatchers("/api/user/{id}/**")
             .hasAnyRole("USER", "ADMIN")
             /*
                 the "#" resolves the variable in the path, "{id}" in this case.
