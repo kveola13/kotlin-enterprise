@@ -17,7 +17,7 @@ services:
       context: ./eureka
       dockerfile: Dockerfile
     ports:
-      - "9100:8761"
+      - "7000:8761"
 
   user-server:
     build:
