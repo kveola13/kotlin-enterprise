@@ -1,7 +1,6 @@
 package no.westerdals.trip.entity
 
 import javax.persistence.*
-import javax.validation.constraints.Email
 import javax.validation.constraints.NotBlank
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size

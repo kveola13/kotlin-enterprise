@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8081
 
 eureka:
   client:
@@ -9,4 +9,4 @@ eureka:
 
 spring:
   application:
-    name: auth-service
+    name: trip-service

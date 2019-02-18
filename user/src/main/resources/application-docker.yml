@@ -1,5 +1,5 @@
 server:
-  port: 8761
+  port: 8086
 
 # when running from Docker Compose, need to change from "localhost" to "eureka" host name
 

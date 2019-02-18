@@ -8,18 +8,19 @@ import org.springframework.transaction.annotation.Transactional
 import javax.persistence.EntityManager
 
 @Repository
-interface UserRepository : CrudRepository<User, String>, UserRepositoryCustom
+interface UserRepository : CrudRepository<User, String>, UserRepositoryCustom {
+}
 
 @Transactional
 interface UserRepositoryCustom {
 
     fun createUserDetails(
-            username: String,
-            name: String,
-            surname: String,
-            email: String,
-            age: Int,
-            purchasedTrips: MutableList<Long>): Boolean
+        username: String,
+        name: String,
+        surname: String,
+        email: String,
+        age: Int,
+        purchasedTickets: MutableList<Long>): Boolean
 
     fun updateEmail(username: String, email: String): Boolean
 }
@@ -32,14 +33,14 @@ class UserRepositoryImpl : UserRepositoryCustom {
     private lateinit var em: EntityManager
 
     override fun createUserDetails(
-            username: String,
-            name: String,
-            surname: String,
-            email: String,
-            age: Int,
-            purchasedTrips: MutableList<Long>): Boolean {
+        username: String,
+        name: String,
+        surname: String,
+        email: String,
+        age: Int,
+        purchasedTickets: MutableList<Long>): Boolean {
 
-        val userDetails = User(username, name, surname, email, age, purchasedTrips)
+        val userDetails = User(username, name, surname, email, age, purchasedTickets)
         em.persist(userDetails)
         return true
     }

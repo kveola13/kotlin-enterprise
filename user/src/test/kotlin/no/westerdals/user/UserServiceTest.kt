@@ -28,7 +28,7 @@ class UserServiceTest {
     private var path = "/api"
 
     @Autowired
-    private lateinit var repository: UserRepository
+    private lateinit var repository : UserRepository
 
     @Before
     @After

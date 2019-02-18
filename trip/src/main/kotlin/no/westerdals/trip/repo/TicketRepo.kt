@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
 import org.springframework.transaction.annotation.Transactional
-import java.time.LocalDateTime
 import javax.persistence.EntityManager
 
 @Repository
@@ -24,7 +23,7 @@ interface TripRepoCustom {
 
 @Repository
 @Transactional
-class TicketRepositoryImpl : TripRepoCustom {
+class TripRepoImpl : TripRepoCustom {
 
     @Autowired
     private lateinit var em: EntityManager
