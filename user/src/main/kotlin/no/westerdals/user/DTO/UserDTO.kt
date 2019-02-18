@@ -1,25 +1,33 @@
 package no.westerdals.user.DTO
 
-import no.westerdals.user.entity.User
+import io.swagger.annotations.ApiModelProperty
+import java.util.*
+import javax.validation.constraints.NotBlank
+import javax.validation.constraints.NotNull
 
-class UserDetailsConverter{
+class UserDTO(
 
-    companion object {
+    @ApiModelProperty("Username of user")
+    @get:NotBlank
+    var username: String? = null,
 
-        fun transform(userDetailsEntity: User): UserDetailsDTO {
-            return UserDetailsDTO(
+    @ApiModelProperty("Name of user")
+    @get:NotBlank
+    var name: String? = null,
 
-                username = userDetailsEntity.username,
-                name = userDetailsEntity.name,
-                surname = userDetailsEntity.surname,
-                email = userDetailsEntity.email,
-                age = userDetailsEntity.age,
-                purchasedTickets = userDetailsEntity.purchasedTickets
+    @ApiModelProperty("Last name of user")
+    @get:NotBlank
+    var surname: String? = null,
 
-            )
-        }
-        fun transform(users: Iterable<User>): List<UserDetailsDTO> {
-            return users.map { transform(it) }
-        }
-    }
-}
+    @ApiModelProperty("Email of user")
+    @get:NotBlank
+    var email: String? = null,
+
+    @ApiModelProperty("Age of user")
+    @get:NotNull
+    var age: Int? = null,
+
+    @ApiModelProperty("what trips they have purchased")
+    @get:NotNull
+    var purchasedTrips: MutableList<Long>? = null
+)

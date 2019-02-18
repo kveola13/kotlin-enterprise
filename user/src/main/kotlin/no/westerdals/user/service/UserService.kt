@@ -2,21 +2,21 @@ package no.westerdals.user.service
 
 import io.swagger.annotations.ApiOperation
 import io.swagger.annotations.ApiParam
-import no.kristiania.soj.groupexam.userservice.db.UserDetailsEntity
-import no.kristiania.soj.groupexam.userservice.db.UserDetailsRepository
-import no.kristiania.soj.groupexam.userservice.dto.UserDetailsConverter
+import no.westerdals.user.DTO.UserConverter
+import no.westerdals.user.DTO.UserDTO
+import no.westerdals.user.entity.User
+import no.westerdals.user.repo.UserRepository
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-import no.kristiania.soj.groupexam.userservice.dto.UserDetailsDTO
 import org.springframework.beans.factory.annotation.Autowired
 
 @RestController
 @RequestMapping(path = ["/api"], produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
-class UserDetailsApi{
+class UserService{
 
     @Autowired
-    private lateinit var crud: UserDetailsRepository
+    private lateinit var crud: UserRepository
 
     @ApiOperation("Get amount of users")
     @GetMapping(path = ["/userDetailsCount"],
@@ -30,9 +30,9 @@ class UserDetailsApi{
     @ApiOperation("Get all user details")
     @GetMapping(path = ["/userDetails"],
         produces = [(MediaType.APPLICATION_JSON_UTF8_VALUE)])
-    fun getAll(): ResponseEntity<List<UserDetailsDTO>> {
+    fun getAll(): ResponseEntity<List<UserDTO>> {
 
-        return ResponseEntity.ok(UserDetailsConverter.transform(crud.findAll()))
+        return ResponseEntity.ok(UserConverter.transform(crud.findAll()))
     }
 
 
@@ -42,12 +42,12 @@ class UserDetailsApi{
     fun getById(
         @ApiParam("the username of a user")
         @PathVariable id: String)
-            : ResponseEntity<UserDetailsDTO> {
+            : ResponseEntity<UserDTO> {
 
         val entity = crud.findById(id).orElse(null)
             ?: return ResponseEntity.status(404).build()
 
-        return ResponseEntity.ok(UserDetailsConverter.transform(entity))
+        return ResponseEntity.ok(UserConverter.transform(entity))
     }
 
 
@@ -58,7 +58,7 @@ class UserDetailsApi{
     fun replace(
         @ApiParam("the username of a user")
         @PathVariable id: String,
-        @RequestBody dto: UserDetailsDTO)
+        @RequestBody dto: UserDTO)
             : ResponseEntity<Void> {
 
         if (id != dto.username) {
@@ -68,7 +68,7 @@ class UserDetailsApi{
         val alreadyExists = crud.existsById(id)
         var code = if(alreadyExists) 204 else 201
 
-        val entity = UserDetailsEntity(dto.username, dto.name, dto.surname, dto.email, dto.age, dto.purchasedTickets)
+        val entity = User(dto.username, dto.name, dto.surname, dto.email, dto.age, dto.purchasedTrips)
 
         try {
             crud.save(entity)

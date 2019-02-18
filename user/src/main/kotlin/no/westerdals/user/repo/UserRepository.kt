@@ -19,7 +19,7 @@ interface UserRepositoryCustom {
             surname: String,
             email: String,
             age: Int,
-            purchasedTickets: MutableList<Long>): Boolean
+            purchasedTrips: MutableList<Long>): Boolean
 
     fun updateEmail(username: String, email: String): Boolean
 }
@@ -37,9 +37,9 @@ class UserRepositoryImpl : UserRepositoryCustom {
             surname: String,
             email: String,
             age: Int,
-            purchasedTickets: MutableList<Long>): Boolean {
+            purchasedTrips: MutableList<Long>): Boolean {
 
-        val userDetails = User(username, name, surname, email, age, purchasedTickets)
+        val userDetails = User(username, name, surname, email, age, purchasedTrips)
         em.persist(userDetails)
         return true
     }

@@ -2,7 +2,7 @@ package no.westerdals.user
 
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
-import no.westerdals.user.DTO.UserDetailsDTO
+import no.westerdals.user.DTO.UserDTO
 import no.westerdals.user.repo.UserRepository
 import org.hamcrest.CoreMatchers.equalTo
 import org.junit.After
@@ -21,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner
 @RunWith(SpringRunner::class)
 @SpringBootTest(classes = [(UserApplication::class)],
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class UserDetailsApiTests {
+class UserServiceTest {
 
     @LocalServerPort
     protected var port = 0
@@ -83,7 +83,7 @@ class UserDetailsApiTests {
 
         val id = "foo"
 
-        val dto = UserDetailsDTO(id, "name", "surname", "e@email.com", 18, null)
+        val dto = UserDTO(id, "name", "surname", "e@email.com", 18, null)
 
         RestAssured.given().auth().basic(id, "bar")
             .contentType(ContentType.JSON)
@@ -115,9 +115,9 @@ class UserDetailsApiTests {
         checkSize(0)
 
         val id = "foo"
-        val name = "seub"
+        val name = "bar"
 
-        val dto = UserDetailsDTO(id, name, "kun", "e@email.com", 21, null)
+        val dto = UserDTO(id, name, "bar", "e@email.com", 21, null)
 
         RestAssured.given().auth().basic(id, "bar")
             .contentType(ContentType.JSON)
@@ -155,7 +155,7 @@ class UserDetailsApiTests {
         val id = "foo"
         val email = "e@email.com"
 
-        val dto = UserDetailsDTO(id, "seub", "kun", email, 21, null)
+        val dto = UserDTO(id, "bar", "bar", email, 21, null)
 
         RestAssured.given().auth().basic(id, "bar")
             .contentType(ContentType.JSON)
@@ -192,7 +192,7 @@ class UserDetailsApiTests {
 
         val id = "foo"
 
-        val dto = UserDetailsDTO(id, "name", "surname", "e@email.com", 18, null)
+        val dto = UserDTO(id, "name", "surname", "e@email.com", 18, null)
 
         RestAssured.given().auth().basic(id, "bar")
             .contentType(ContentType.JSON)
@@ -235,7 +235,7 @@ class UserDetailsApiTests {
         val id = "foo"
         val email = "e@email.com"
 
-        val dto = UserDetailsDTO(id, "seub", "kun", email, 21, null)
+        val dto = UserDTO(id, "bar", "bar", email, 21, null)
 
         RestAssured.given().auth().basic(id, "bar")
             .contentType(ContentType.JSON)

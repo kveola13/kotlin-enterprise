@@ -2,12 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbd1d408-0d84-4ab3-b348-bbdc227a14e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/repo/TicketRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/AuthApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/TestApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/UserApi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/TestDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/RestResponseFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WebSecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WrappedResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/test/kotlin/no/westerdals/auth/UserApiTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trip/src/test/kotlin/no/westerdals/trip/TripApiTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/kotlin/no/westerdals/eureka/EurekaApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/kotlin/no/westerdals/eureka/EurekaApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trip/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/trip/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserConverter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDetailsDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDTO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,60 +55,85 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserApplication.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#28#431#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt">
+            <entry file="file://$PROJECT_DIR$/gateway/Dockerfile">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="46">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                  <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt">
+            <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="46">
-                  <caret line="2" selection-start-line="2" selection-end-line="33" selection-end-column="1" />
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt">
+            <entry file="file://$PROJECT_DIR$/trip/Dockerfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                <state relative-caret-position="46">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserConverter.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="322">
+                  <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserConverter.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/eureka/Dockerfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/user/Dockerfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/repo/TicketRepo.kt">
+            <entry file="file://$PROJECT_DIR$/docker-compose.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1196">
-                  <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+                <state relative-caret-position="299">
+                  <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -91,8 +143,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+                <state relative-caret-position="184">
+                  <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripDTO.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="23">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                  <folding>
+                    <element signature="e#32#167#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -112,6 +176,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>spring</find>
+      <find>ticketId</find>
+      <find>TicketDTO</find>
+      <find>UserDetailsDTO</find>
+      <find>UserDetailsConverter</find>
+      <find>UserDetailsEntity</find>
+      <find>purchasedTickets</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,30 +194,53 @@
         <option value="$PROJECT_DIR$/eureka/src/main/kotlin/EurekaApplication.kt" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/GatewayApp.kt" />
-        <option value="$PROJECT_DIR$/eureka/src/main/kotlin/no/westerdals/eureka/EurekaApplication.kt" />
-        <option value="$PROJECT_DIR$/gateway/Dockerfile" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/EurekaApplication.kt" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/GatewayApplication.kt" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/user-repo.kt" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/user.kt" />
-        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt" />
         <option value="$PROJECT_DIR$/user/src/main/resources/application.yml.kt" />
         <option value="$PROJECT_DIR$/user/src/main/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/trip/pom.xml" />
-        <option value="$PROJECT_DIR$/auth/pom.xml" />
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserDetailsDTO.kt" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserDTO.kt" />
-        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDetailsDTO.kt" />
-        <option value="$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserApplication.kt" />
-        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt" />
         <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt" />
-        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt" />
         <option value="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt" />
         <option value="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/repo/TicketRepo.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDTO.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDetailsDTO.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt" />
+        <option value="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt" />
+        <option value="$PROJECT_DIR$/trip/src/test/kotlin/no/westerdals/trip/TripApiTests.kt" />
+        <option value="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripDTO.kt" />
+        <option value="$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripConverter.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt" />
+        <option value="$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/AuthApplication.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserEntity.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserRepository.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/TestDto.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserDTO.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/RestResponseFactory.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WrappedResponse.kt" />
+        <option value="$PROJECT_DIR$/auth/pom.xml" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WebSecurityConfig.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/TestApi.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/UserApi.kt" />
+        <option value="$PROJECT_DIR$/auth/src/test/kotlin/no/westerdals/auth/UserApiTests.kt" />
+        <option value="$PROJECT_DIR$/eureka/src/main/kotlin/no/westerdals/eureka/EurekaApplication.kt" />
+        <option value="$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserConverter.kt" />
+        <option value="$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserConverter.kt" />
+        <option value="$PROJECT_DIR$/eureka/Dockerfile" />
+        <option value="$PROJECT_DIR$/user/Dockerfile" />
+        <option value="$PROJECT_DIR$/gateway/Dockerfile" />
+        <option value="$PROJECT_DIR$/auth/Dockerfile" />
+        <option value="$PROJECT_DIR$/trip/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -189,80 +282,25 @@
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="trip" type="462c0819:PsiDirectoryNode" />
-              <item name="repo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
@@ -270,6 +308,181 @@
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="trip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="trip" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -284,27 +497,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="repo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kotlin-enterprise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kotlin-enterprise" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,10 +517,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550440909505" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550484652740" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$PROJECT_DIR$/../program files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -331,12 +530,15 @@
       <recent name="C:\kotlin-enterprise\auth\src\main\kotlin" />
       <recent name="C:\kotlin-enterprise\eureka\src\main\kotlin\no\westerdals\eureka" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="no.westerdals.auth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\kotlin-enterprise\auth\src\main\resources" />
+      <recent name="C:\kotlin-enterprise\auth\src\main\kotlin\no\westerdals\auth" />
       <recent name="C:\kotlin-enterprise\gateway" />
       <recent name="C:\kotlin-enterprise\gateway\src" />
       <recent name="C:\kotlin-enterprise\eureka" />
-      <recent name="C:\kotlin-enterprise\user\src" />
-      <recent name="C:\kotlin-enterprise\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -351,9 +553,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.eureka: Compose Deployment">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TripApiTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.westerdals.trip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.westerdals.trip" />
+      <option name="MAIN_CLASS_NAME" value="no.westerdals.trip.TripApiTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -361,6 +579,13 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="no.westerdals.auth.AuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -400,8 +625,23 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.eureka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="eureka" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.eureka: Compose Deployment" />
+        <item itemvalue="JUnit.TripApiTests" />
         <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
@@ -420,7 +660,7 @@
       <workItem from="1550245882791" duration="2901000" />
       <workItem from="1550254746514" duration="4395000" />
       <workItem from="1550266376198" duration="4196000" />
-      <workItem from="1550411882253" duration="6392000" />
+      <workItem from="1550411882253" duration="11779000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1550251950282</created>
@@ -478,16 +718,28 @@
       <option name="project" value="LOCAL" />
       <updated>1550440409094</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix to folders">
+      <created>1550441524274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550441524274</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TripApiTests - 2019.02.18 at 10h 19m 23s.xml">
+      <configuration name="TripApiTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17884000" />
+    <option name="totallyTimeSpent" value="23271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944258" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944258" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" sideWeight="0.5005574" side_tool="true" weight="0.2553305" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -509,7 +761,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4989339" visible="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" sideWeight="0.4989339" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -534,68 +786,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fix to folders" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlinexam.pub" />
-    <entry file="file://$PROJECT_DIR$/kotlinexam" />
-    <entry file="file://$PROJECT_DIR$/kotlin-enterprise.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/GatewayApplication.kt" />
-    <entry file="file://$PROJECT_DIR$/logs/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trip/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.0.2.RELEASE/spring-cloud-netflix-eureka-server-2.0.2.RELEASE.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerInitializerConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/GatewayApp.kt" />
-    <entry file="file://$PROJECT_DIR$/eureka/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/EurekaApplication.kt" />
     <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -622,9 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/trip/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -642,23 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2599">
-          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-          <folding>
-            <element signature="e#36#595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3542">
@@ -673,10 +847,234 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/repo/TicketRepo.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDTO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="e#28#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripDTO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#32#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/DTO/TripConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/src/test/kotlin/no/westerdals/trip/TripApiTests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#28#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.10.RELEASE/spring-test-5.0.10.RELEASE.jar!/org/springframework/test/context/support/DefaultTestContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/service/UserService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#36#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#28#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="e#28#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WrappedResponse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/AuthApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/RestResponseFactory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="e#34#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/PasswordConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#442#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserDTO.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/TestDto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/db/UserEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3726">
+          <caret line="162" column="12" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/util/WebSecurityConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/TestApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#30#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/UserApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2691">
+          <caret line="117" column="37" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="37" />
+          <folding>
+            <element signature="e#42#1224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/test/kotlin/no/westerdals/auth/UserApiTests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4905">
+          <caret line="223" column="64" selection-start-line="223" selection-start-column="64" selection-end-line="223" selection-end-column="64" />
+          <folding>
+            <element signature="e#28#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eureka/src/main/kotlin/no/westerdals/eureka/EurekaApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
           <folding>
             <element signature="e#30#221#0" expanded="true" />
           </folding>
@@ -686,86 +1084,69 @@
     <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/no/westerdals/gateway/GatewayApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDTO.kt">
+    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="322">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/DTO/UserDetailsDTO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="e#28#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/test/kotlin/no/westerdals/user/UserServiceTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/repo/UserRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#28#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/UserApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#28#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/TripApplication.kt">
+    <entry file="file://$PROJECT_DIR$/auth/src/main/kotlin/no/westerdals/auth/dto/UserConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/security/WebSecurityConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/src/main/kotlin/no/westerdals/user/entity/User.kt">
+    <entry file="file://$PROJECT_DIR$/eureka/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="33" selection-end-column="1" />
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/entity/Trip.kt">
+    <entry file="file://$PROJECT_DIR$/user/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="46">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trip/src/main/kotlin/no/westerdals/trip/repo/TicketRepo.kt">
+    <entry file="file://$PROJECT_DIR$/gateway/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        <state relative-caret-position="46">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trip/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -780,7 +1161,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -824,11 +1204,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|eureka</last-edited>
+          <last-edited>auth</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

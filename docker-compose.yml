@@ -29,6 +29,16 @@ services:
       - postgres-user
       - rabbitmq
 
+  trip-server:
+    build:
+      context: ./trip
+      dockerfile: Dockerfile
+    depends_on:
+      - user-server
+      - eureka
+      - redis
+      - auth-server
+
 
   auth-server:
     build:
@@ -46,7 +56,7 @@ services:
       context: ./gateway
       dockerfile: Dockerfile
     ports:
-      - "10000:8080"
+      - "8002:8080"
     depends_on:
       - redis
       - eureka

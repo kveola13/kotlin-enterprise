@@ -30,5 +30,5 @@ class User(
 
     //Purchased trips
     @get:ElementCollection
-    var purchasedTickets: MutableList<Long>? = mutableListOf()
+    var purchasedTrips: MutableList<Long>? = mutableListOf()
 )
